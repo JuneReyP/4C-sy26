@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        div{
+            border: 1px solid black;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+            font-size: 40px;
+        }
+        .sidebar{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 90vh;
+        }
+        .content{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">sidebar</div>
+        <div class="content">content</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
